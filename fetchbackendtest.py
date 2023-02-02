@@ -1,29 +1,5 @@
-# How to run this app:
-# Make sure your machine has Python installed, ideally Python 3 in some form.
-# Navigate to the directory in which this file is being stored in your terminal.
-# From this point in the terminal, run the command "python fetchbackendtest.py <x>",
-# where x is the input you want
-
-# NOTE: x must be an integer. Don't blame me if you put in 
-# a non-integer value and you get an error.
-
 import csv
 import sys
-
-# Note: A few assumptions were made here.
-# The first assumption was that there will always be three values in the CSV,
-# and that these three values will be in the given order ('payer', 'points', 
-# 'timestamp'). If there are anyt extra values, they will be ignored.
-
-# Another assumption made was that the times will always be in the form 
-# 'YYYY-MM-DDTHH:mm:SSZ', where YYYY is the year, MM is the month, DD is the day,
-# HH is the hour, mm is the minute, and SS is the second. The parser may not work otherwise.
-
-# Third assumption: Only one number is put into the command line
-# This number is an integer
-
-# Fourth assumption: The file being put in will always
-# be named 'samplebackend.csv'
 
 # Helper function for parsing the times
 # Takes a list and a delimiter to split the last element in the list
